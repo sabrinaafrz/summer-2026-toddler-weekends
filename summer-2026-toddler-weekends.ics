@@ -6,7 +6,7 @@ METHOD:PUBLISH
 X-WR-CALNAME:Summer 2026 Toddler Weekend Adventures
 BEGIN:VEVENT
 UID:summer2026-toddler-1@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260620
 DTEND;VALUE=DATE:20260622
 SUMMARY:Children's Fairyland — Oakland
@@ -20,7 +20,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-2@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260627
 DTEND;VALUE=DATE:20260629
 SUMMARY:Little Farm + Merry-Go-Round\, Tilden Park — Berkeley
@@ -35,24 +35,24 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-3@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260704
 DTEND;VALUE=DATE:20260706
-SUMMARY:Cabin Getaway · Petaluma KOA Resort — Petaluma
-DESCRIPTION:Rent a cozy Deluxe Cabin (real beds\, full bath) for an easy 
- first overnight close to home. Your little guy can meet goats\, mini donk
- eys\, and horses at the petting farm\, bounce on the giant jumping pillow
- \, splash in the pool\, and roast a first marshmallow by the fire.\nDrive
- : ~1 hr 10 min from Fremont\nWebsite: https://koa.com/campgrounds/san-fra
- ncisco/
-LOCATION:San Francisco North Petaluma KOA Resort\, 20 Rainsville Rd\, Pet
- aluma CA
-URL:https://koa.com/campgrounds/san-francisco/
+SUMMARY:Farm Cottage Stay · Mar Vista\, Gualala — Gualala (Mendocino Coas
+ t)
+DESCRIPTION:Rent a restored 1930s cottage (fireplace\, full kitchen\, pri
+ vate bath) on a 9-acre organic farm on the 'secret coast.' Your little gu
+ y collects warm eggs at the daily Chicken Chat\, feeds the goats at Goat 
+ Gab\, picks veggies straight from the garden\, and toddles down to a priv
+ ate beach. Pure\, screen-free magic.\nDrive: ~3 hrs from Fremont\nWebsite
+ : https://marvistafarmandcottages.com/
+LOCATION:Mar Vista Farm and Cottages\, 35101 CA-1\, Gualala CA
+URL:https://marvistafarmandcottages.com/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-4@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260711
 DTEND;VALUE=DATE:20260713
 SUMMARY:Gilroy Gardens Family Theme Park — Gilroy
@@ -66,7 +66,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-5@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260718
 DTEND;VALUE=DATE:20260720
 SUMMARY:Lindsay Wildlife Experience — Walnut Creek
@@ -80,7 +80,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-6@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260725
 DTEND;VALUE=DATE:20260727
 SUMMARY:Splash Zone at The Wave (Emerald Glen Park) — Dublin
@@ -95,7 +95,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-7@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260801
 DTEND;VALUE=DATE:20260803
 SUMMARY:Habitot Children's Museum — Berkeley
@@ -109,7 +109,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-8@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260808
 DTEND;VALUE=DATE:20260810
 SUMMARY:Sonoma TrainTown Railroad — Sonoma
@@ -123,7 +123,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-9@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260815
 DTEND;VALUE=DATE:20260817
 SUMMARY:Henry Cowell Redwoods State Park — Felton
@@ -138,22 +138,23 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-10@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260822
 DTEND;VALUE=DATE:20260824
-SUMMARY:Cabin Getaway · Evergreen Lodge at Yosemite — Groveland
-DESCRIPTION:A two-bedroom family cabin tucked in the pines near Yosemite 
- — room to put the little guy to bed while you relax on the deck. A big sh
- allow-end saltwater pool\, a forest playground\, an indoor toddler play r
- oom\, nature crafts\, and s'mores by the fire. Book early for summer.\nDr
- ive: ~2 hr 45 min from Fremont\nWebsite: https://www.evergreenlodge.com
-LOCATION:Evergreen Lodge at Yosemite\, 33160 Evergreen Rd\, Groveland CA
-URL:https://www.evergreenlodge.com
+SUMMARY:Airstream in the Redwoods · AutoCamp Russian River — Guerneville
+DESCRIPTION:Sleep in a design-forward vintage Airstream (private bath\, r
+ eal beds\, AC) under a grove of giant redwoods. Borrow the free bikes\, t
+ oast s'mores at your own fire pit\, do morning kids' crafts at the clubho
+ use\, and drift along the gentle Russian River beach just minutes away.\n
+ Drive: ~2 hrs from Fremont\nWebsite: https://autocamp.com/location/sonoma
+ /
+LOCATION:AutoCamp Russian River\, 14120 Old Cazadero Rd\, Guerneville CA
+URL:https://autocamp.com/location/sonoma/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-11@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260829
 DTEND;VALUE=DATE:20260831
 SUMMARY:CuriOdyssey — San Mateo
@@ -167,7 +168,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-12@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260907
 SUMMARY:Children's Creativity Museum — San Francisco
@@ -181,7 +182,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-13@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260914
 SUMMARY:Ardenwood Historic Farm — Fremont
@@ -195,7 +196,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-14@weekend-adventures
-DTSTAMP:20260621T181500Z
+DTSTAMP:20260621T184000Z
 DTSTART;VALUE=DATE:20260919
 DTEND;VALUE=DATE:20260921
 SUMMARY:Filoli Historic Garden — Woodside
