@@ -6,7 +6,7 @@ METHOD:PUBLISH
 X-WR-CALNAME:Summer 2026 Toddler Weekend Adventures
 BEGIN:VEVENT
 UID:summer2026-toddler-1@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260620
 DTEND;VALUE=DATE:20260622
 SUMMARY:Children's Fairyland — Oakland
@@ -20,7 +20,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-2@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260627
 DTEND;VALUE=DATE:20260629
 SUMMARY:Little Farm + Merry-Go-Round\, Tilden Park — Berkeley
@@ -35,7 +35,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-3@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260704
 DTEND;VALUE=DATE:20260706
 SUMMARY:Farm Cottage Stay · Mar Vista\, Gualala — Gualala (Mendocino Coas
@@ -52,7 +52,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-4@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260711
 DTEND;VALUE=DATE:20260713
 SUMMARY:Gilroy Gardens Family Theme Park — Gilroy
@@ -66,7 +66,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-5@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260718
 DTEND;VALUE=DATE:20260720
 SUMMARY:Lindsay Wildlife Experience — Walnut Creek
@@ -80,7 +80,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-6@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260725
 DTEND;VALUE=DATE:20260727
 SUMMARY:Splash Zone at The Wave (Emerald Glen Park) — Dublin
@@ -95,7 +95,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-7@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260801
 DTEND;VALUE=DATE:20260803
 SUMMARY:Habitot Children's Museum — Berkeley
@@ -109,7 +109,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-8@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260808
 DTEND;VALUE=DATE:20260810
 SUMMARY:Sonoma TrainTown Railroad — Sonoma
@@ -123,7 +123,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-9@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260815
 DTEND;VALUE=DATE:20260817
 SUMMARY:Henry Cowell Redwoods State Park — Felton
@@ -138,23 +138,25 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-10@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260822
 DTEND;VALUE=DATE:20260824
-SUMMARY:Airstream in the Redwoods · AutoCamp Russian River — Guerneville
-DESCRIPTION:Sleep in a design-forward vintage Airstream (private bath\, r
- eal beds\, AC) under a grove of giant redwoods. Borrow the free bikes\, t
- oast s'mores at your own fire pit\, do morning kids' crafts at the clubho
- use\, and drift along the gentle Russian River beach just minutes away.\n
- Drive: ~2 hrs from Fremont\nWebsite: https://autocamp.com/location/sonoma
- /
-LOCATION:AutoCamp Russian River\, 14120 Old Cazadero Rd\, Guerneville CA
-URL:https://autocamp.com/location/sonoma/
+SUMMARY:Coastal Cabin Stay · Costanoa\, Pescadero — Pescadero (San Mateo 
+ Coast)
+DESCRIPTION:A laid-back eco-resort tucked between the coastal hills and t
+ he sea. Rent a cozy cabin or a family cottage with its own fire pit\, roa
+ st a free marshmallow at the nightly Sunset S'mores\, wander easy nature 
+ trails spotting deer and bunnies\, and stroll the dune boardwalk to a wil
+ d\, quiet beach. Summer is 'kid time' here\, with little-adventurer activ
+ ities.\nDrive: ~1 hr 20 min from Fremont\nWebsite: https://www.costanoa.c
+ om/
+LOCATION:Costanoa Lodge\, 2001 Rossi Rd\, Pescadero CA
+URL:https://www.costanoa.com/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-11@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260829
 DTEND;VALUE=DATE:20260831
 SUMMARY:CuriOdyssey — San Mateo
@@ -168,7 +170,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-12@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260907
 SUMMARY:Children's Creativity Museum — San Francisco
@@ -182,7 +184,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-13@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260914
 SUMMARY:Ardenwood Historic Farm — Fremont
@@ -196,7 +198,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-14@weekend-adventures
-DTSTAMP:20260621T184000Z
+DTSTAMP:20260621T190000Z
 DTSTART;VALUE=DATE:20260919
 DTEND;VALUE=DATE:20260921
 SUMMARY:Filoli Historic Garden — Woodside
