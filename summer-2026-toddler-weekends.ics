@@ -1,0 +1,189 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Summer 2026 Toddler Adventures//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Summer 2026 Toddler Weekend Adventures
+BEGIN:VEVENT
+UID:summer2026-toddler-1@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260620
+DTEND;VALUE=DATE:20260622
+SUMMARY:Children's Fairyland — Oakland
+DESCRIPTION:A gentle\, storybook-themed park made for little kids — their
+  first puppet show\, first tiny carousel ride\, and walk-through fairy-ta
+ le sets they can toddle through. No big crowds or scary rides.\nDrive: ~3
+ 0 min from Fremont
+LOCATION:Children's Fairyland\, Oakland CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-2@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260627
+DTEND;VALUE=DATE:20260629
+SUMMARY:Little Farm + Merry-Go-Round\, Tilden Park — Berkeley
+DESCRIPTION:Hand-feed lettuce and celery to cows\, goats\, and sheep at t
+ he free Little Farm — a classic toddler milestone — then a first spin on 
+ the vintage carousel and the Redwood Valley steam train nearby.\nDrive: ~
+ 40 min from Fremont
+LOCATION:Little Farm Tilden Regional Park Berkeley CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-3@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260704
+DTEND;VALUE=DATE:20260706
+SUMMARY:Berry Picking at Gizdich Ranch — Watsonville
+DESCRIPTION:Pick-your-own olallieberries from low\, toddler-height bushes
+  — the joy of plucking a berry and eating it on the spot. Open space to r
+ oam and a famous pie shop to finish. Relaxed holiday-weekend pace.\nDrive
+ : ~1 hr 15 min from Fremont
+LOCATION:Gizdich Ranch Watsonville CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-4@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260713
+SUMMARY:Gilroy Gardens Family Theme Park — Gilroy
+DESCRIPTION:A garden theme park built for the littlest riders: their firs
+ t tiny rides with low height limits\, a first paddle boat\, splash areas\
+ , and acres of grass. Gentle\, green\, and genuinely toddler-scaled.\nDri
+ ve: ~45 min from Fremont
+LOCATION:Gilroy Gardens Family Theme Park Gilroy CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-5@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20260720
+SUMMARY:Lindsay Wildlife Experience — Walnut Creek
+DESCRIPTION:A small\, easy wildlife museum where toddlers meet live rescu
+ ed animals — hawks\, owls\, a rabbit — just feet away\, plus a hands-on n
+ ature nook. Indoor and cool for a warm inland weekend.\nDrive: ~35 min fr
+ om Fremont
+LOCATION:Lindsay Wildlife Experience Walnut Creek CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-6@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260727
+SUMMARY:Emerald Glen Park Splash Pad — Dublin
+DESCRIPTION:A big\, flat\, zero-depth splash pad with gentle fountains an
+ d jets — the perfect first water-play experience for unsteady little feet
+ . Bring a towel\, a swim diaper\, and let them squeal. Shady playground a
+ longside.\nDrive: ~25 min from Fremont
+LOCATION:Emerald Glen Park Dublin CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-7@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260803
+SUMMARY:Habitot Children's Museum — Berkeley
+DESCRIPTION:A museum designed specifically for ages 0–5: their first art 
+ easel\, first water table\, soft climbing blocks\, and a toddler-safe cra
+ wl tunnel. Everything is squishy\, washable\, and made for tiny explorers
+ .\nDrive: ~45 min from Fremont
+LOCATION:Habitot Children's Museum Berkeley CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-8@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260810
+SUMMARY:Sonoma TrainTown Railroad — Sonoma
+DESCRIPTION:A 20-minute miniature train ride through tunnels and over lit
+ tle bridges — a thrilling first train for a 19-month-old — plus a petting
+  zoo\, carousel\, and a kid-sized Ferris wheel. Built for the under-5 cro
+ wd.\nDrive: ~1 hr 30 min from Fremont
+LOCATION:TrainTown Sonoma CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-9@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260817
+SUMMARY:Henry Cowell Redwoods State Park — Felton
+DESCRIPTION:The flat\, stroller-friendly Redwood Grove Loop lets toddlers
+  crane their necks at towering ancient redwoods\, touch the soft bark\, a
+ nd toddle over a wide\, easy path. A calm\, awe-filled first nature walk.
+ \nDrive: ~50 min from Fremont
+LOCATION:Henry Cowell Redwoods State Park Felton CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-10@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260822
+DTEND;VALUE=DATE:20260824
+SUMMARY:Fairytale Town — Sacramento
+DESCRIPTION:A storybook play park with climb-in nursery-rhyme sets — a gi
+ ant boot slide\, a crooked house — plus gentle farm animals\, all scaled 
+ for little legs. Shady\, gated\, and easy to navigate with a stroller.\nD
+ rive: ~2 hrs from Fremont
+LOCATION:Fairytale Town Sacramento CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-11@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260831
+SUMMARY:CuriOdyssey — San Mateo
+DESCRIPTION:A bayside science playground where toddlers push\, pour\, and
+  poke at interactive exhibits and meet rescued native animals up close. S
+ mall\, manageable\, and endlessly touchable — a great first museum of dis
+ covery.\nDrive: ~35 min from Fremont
+LOCATION:CuriOdyssey San Mateo CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-12@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260907
+SUMMARY:Children's Creativity Museum — San Francisco
+DESCRIPTION:Hands-on art and play studios in Yerba Buena Gardens with a d
+ edicated toddler area — their first finger-paint\, first building blocks 
+ — and the beloved 1906 carousel right outside. Labor Day weekend pick.\nD
+ rive: ~45 min from Fremont
+LOCATION:Children's Creativity Museum San Francisco CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-13@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260914
+SUMMARY:Ardenwood Historic Farm — Fremont
+DESCRIPTION:A working historic farm right at home in Fremont — friendly c
+ ows and chickens\, a horse-drawn rail car\, and open fields to wander. Sl
+ ow-paced and stroller-friendly for an easygoing toddler day.\nDrive: ~10 
+ min from Fremont
+LOCATION:Ardenwood Historic Farm Fremont CA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:summer2026-toddler-14@weekend-adventures
+DTSTAMP:20260621T173900Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260921
+SUMMARY:Filoli Historic Garden — Woodside
+DESCRIPTION:Sweeping\, stroller-friendly formal gardens and open lawns to
+  toddle across\, with a gentle nature trail and a relaxed café. A calm\, 
+ pretty way to close out the summer of firsts.\nDrive: ~40 min from Fremon
+ t
+LOCATION:Filoli Woodside CA
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

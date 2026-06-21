@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Summer 2026 · Toddler Weekend Adventures (Bay Area)</title>
+<meta name="description" content="A calendar of summer 2026 weekends, each with one 19-month-toddler-friendly activity in the Bay Area or within a 4-hour drive. Downloadable as iCalendar / Google Calendar." />
+<style>
+  :root {
+    --bg: #fff7ed;
+    --bg2: #ffedd5;
+    --ink: #3b2f2f;
+    --muted: #7c6f64;
+    --accent: #f97316;
+    --accent-2: #0ea5e9;
+    --accent-3: #16a34a;
+    --card: #ffffff;
+    --ring: #fdba74;
+    --shadow: 0 10px 30px rgba(124, 45, 18, 0.10);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1200px 500px at 100% -10%, var(--bg2), transparent 60%),
+      radial-gradient(900px 500px at -10% 0%, #fef9c3, transparent 55%),
+      var(--bg);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 28px 20px 80px; }
+
+  header.hero {
+    text-align: center;
+    padding: 28px 16px 8px;
+  }
+  .sun {
+    font-size: 44px;
+    line-height: 1;
+    filter: drop-shadow(0 4px 10px rgba(249,115,22,.35));
+  }
+  h1 {
+    font-size: clamp(28px, 5vw, 44px);
+    margin: 10px 0 6px;
+    letter-spacing: -0.02em;
+  }
+  .subtitle { color: var(--muted); font-size: clamp(15px, 2.4vw, 18px); margin: 0 auto; max-width: 640px; }
+  .pills { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin: 16px 0 4px; }
+  .pill {
+    background: #fff;
+    border: 1px solid var(--ring);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 13px;
+    box-shadow: var(--shadow);
+  }
+
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0;
+    margin: 18px 0 8px;
+    background: linear-gradient(var(--bg), rgba(255,247,237,.85));
+    backdrop-filter: blur(6px);
+  }
+  button.btn, a.btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 650;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: var(--shadow);
+    transition: transform .08s ease, filter .15s ease;
+  }
+  button.btn:active, a.btn:active { transform: translateY(1px); }
+  .btn.primary { background: linear-gradient(135deg, #f97316, #fb923c); }
+  .btn.secondary { background: linear-gradient(135deg, #0ea5e9, #38bdf8); }
+  .btn.ghost { background: #fff; color: var(--ink); border: 1px solid var(--ring); }
+  .btn:hover { filter: brightness(1.04); }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 18px;
+    margin-top: 10px;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    border: 1px solid #fde7cf;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(124,45,18,.16); }
+  .card .band {
+    padding: 14px 18px;
+    color: #fff;
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+  }
+  .card .band .when { font-weight: 700; font-size: 15px; }
+  .card .band .num {
+    background: rgba(255,255,255,.25);
+    border-radius: 999px;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .card .thumb {
+    position: relative;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    background: #fde7cf;
+  }
+  .card .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .35s ease;
+  }
+  .card:hover .thumb img { transform: scale(1.05); }
+  .firstbadge {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background: rgba(28,25,23,.72);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 650;
+    padding: 5px 11px;
+    border-radius: 999px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  }
+  .card .body { padding: 16px 18px 8px; flex: 1; }
+  .activity { font-size: 20px; font-weight: 750; margin: 0 0 4px; letter-spacing:-0.01em; }
+  .loc { color: var(--accent); font-weight: 650; font-size: 14px; margin: 0 0 10px; display:flex; align-items:center; gap:6px; }
+  .desc { color: #5b5048; font-size: 14.5px; margin: 0 0 12px; }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; margin: 0 0 6px; }
+  .tag { font-size: 12px; background: #fff7ed; border:1px solid #fde7cf; color: var(--muted); padding: 4px 9px; border-radius: 999px; }
+  .card .actions { padding: 10px 18px 18px; display:flex; gap:10px; flex-wrap:wrap; }
+  .mini {
+    font-size: 13px; font-weight: 650; text-decoration: none;
+    padding: 9px 12px; border-radius: 10px; display:inline-flex; align-items:center; gap:6px;
+  }
+  .mini.gcal { background:#e0f2fe; color:#0369a1; }
+  .mini.map { background:#dcfce7; color:#15803d; }
+  .mini:hover { filter: brightness(.98); }
+
+  footer { text-align:center; color: var(--muted); font-size: 13px; margin-top: 40px; }
+  .note { max-width: 720px; margin: 18px auto 0; background:#fff; border:1px dashed var(--ring); border-radius: 14px; padding: 14px 18px; color:#5b5048; font-size:13.5px; }
+
+  .toast {
+    position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%) translateY(20px);
+    background: #1c1917; color:#fff; padding: 12px 18px; border-radius: 12px; font-size:14px;
+    opacity: 0; pointer-events:none; transition: opacity .25s ease, transform .25s ease; z-index: 50;
+    box-shadow: 0 12px 30px rgba(0,0,0,.25);
+  }
+  .toast.show { opacity:1; transform: translateX(-50%) translateY(0); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="sun">☀️🧸</div>
+    <h1>Summer 2026 Weekend Adventures</h1>
+    <p class="subtitle">A summer of "firsts" for a busy 19-month-old — one memorable, experience-first outing every weekend. Drive times are from Fremont.</p>
+    <div class="pills">
+      <span class="pill">👶 Built around toddler firsts</span>
+      <span class="pill">🚗 Drive times from Fremont</span>
+      <span class="pill">📅 14 weekends</span>
+      <span class="pill">⬇️ Download to any calendar</span>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <button class="btn primary" id="downloadIcs">⬇️ Download all (.ics)</button>
+    <button class="btn secondary" id="shareBtn">🔗 Share this page</button>
+    <a class="btn ghost" id="subscribeHelp" href="#how">❓ How to import</a>
+  </div>
+
+  <main class="grid" id="grid"></main>
+
+  <div class="note" id="how">
+    <strong>How to add these to your calendar</strong><br/>
+    <strong>Everything at once:</strong> click <em>Download all (.ics)</em>, then open the file. On a Mac it imports into Apple Calendar; in Google Calendar go to <em>Settings → Import &amp; export → Import</em> and choose the <code>.ics</code> file. <br/>
+    <strong>One weekend at a time:</strong> use the <em>Add to Google Calendar</em> button on any card.<br/>
+    Each event is an all-weekend (Sat–Sun) all-day entry, so it shows up across the whole weekend.
+  </div>
+
+  <footer>
+    <p>Made for summer 2026 · Verify hours, tickets &amp; reservations before you go — some spots need advance booking.</p>
+  </footer>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ---- Data: one toddler-friendly activity per summer 2026 weekend ----
+// dateStart / dateEnd are [YYYY, M(1-12), D]. All-day events: end is the day AFTER the last day.
+const BANDS = [
+  "linear-gradient(135deg,#f97316,#fb923c)",
+  "linear-gradient(135deg,#0ea5e9,#38bdf8)",
+  "linear-gradient(135deg,#16a34a,#4ade80)",
+  "linear-gradient(135deg,#db2777,#f472b6)",
+  "linear-gradient(135deg,#7c3aed,#a78bfa)",
+  "linear-gradient(135deg,#ca8a04,#facc15)"
+];
+
+const EVENTS = [
+  {
+    sat: [2026,6,20], activity: "Children's Fairyland",
+    loc: "Oakland", drive: "~30 min from Fremont",
+    img: "images/01-fairyland.png",
+    first: "First storybook adventure",
+    desc: "A gentle, storybook-themed park made for little kids — their first puppet show, first tiny carousel ride, and walk-through fairy-tale sets they can toddle through. No big crowds or scary rides.",
+    map: "Children's Fairyland, Oakland CA",
+    tags: ["Theme park", "Puppet show", "Stroller-friendly"]
+  },
+  {
+    sat: [2026,6,27], activity: "Little Farm + Merry-Go-Round, Tilden Park",
+    loc: "Berkeley", drive: "~40 min from Fremont",
+    img: "images/02-littlefarm.png",
+    first: "First time feeding a farm animal",
+    desc: "Hand-feed lettuce and celery to cows, goats, and sheep at the free Little Farm — a classic toddler milestone — then a first spin on the vintage carousel and the Redwood Valley steam train nearby.",
+    map: "Little Farm Tilden Regional Park Berkeley CA",
+    tags: ["Feed animals", "Free farm", "Carousel"]
+  },
+  {
+    sat: [2026,7,4], activity: "Berry Picking at Gizdich Ranch",
+    loc: "Watsonville", drive: "~1 hr 15 min from Fremont",
+    img: "images/03-berrypicking.png",
+    first: "First time picking fruit",
+    desc: "Pick-your-own olallieberries from low, toddler-height bushes — the joy of plucking a berry and eating it on the spot. Open space to roam and a famous pie shop to finish. Relaxed holiday-weekend pace.",
+    map: "Gizdich Ranch Watsonville CA",
+    tags: ["U-pick", "Sensory", "Outdoors"]
+  },
+  {
+    sat: [2026,7,11], activity: "Gilroy Gardens Family Theme Park",
+    loc: "Gilroy", drive: "~45 min from Fremont",
+    img: "images/04-gilroygardens.png",
+    first: "First amusement-park rides",
+    desc: "A garden theme park built for the littlest riders: their first tiny rides with low height limits, a first paddle boat, splash areas, and acres of grass. Gentle, green, and genuinely toddler-scaled.",
+    map: "Gilroy Gardens Family Theme Park Gilroy CA",
+    tags: ["First rides", "Splash area", "Gardens"]
+  },
+  {
+    sat: [2026,7,18], activity: "Lindsay Wildlife Experience",
+    loc: "Walnut Creek", drive: "~35 min from Fremont",
+    img: "images/05-lindsaywildlife.png",
+    first: "First close-up with wild animals",
+    desc: "A small, easy wildlife museum where toddlers meet live rescued animals — hawks, owls, a rabbit — just feet away, plus a hands-on nature nook. Indoor and cool for a warm inland weekend.",
+    map: "Lindsay Wildlife Experience Walnut Creek CA",
+    tags: ["Indoor", "Live animals", "Hands-on"]
+  },
+  {
+    sat: [2026,7,25], activity: "Emerald Glen Park Splash Pad",
+    loc: "Dublin", drive: "~25 min from Fremont",
+    img: "images/06-splashpad.png",
+    first: "First splash-pad water play",
+    desc: "A big, flat, zero-depth splash pad with gentle fountains and jets — the perfect first water-play experience for unsteady little feet. Bring a towel, a swim diaper, and let them squeal. Shady playground alongside.",
+    map: "Emerald Glen Park Dublin CA",
+    tags: ["Water play", "Free", "Hot-day pick"]
+  },
+  {
+    sat: [2026,8,1], activity: "Habitot Children's Museum",
+    loc: "Berkeley", drive: "~45 min from Fremont",
+    img: "images/07-habitot.png",
+    first: "First hands-on play museum",
+    desc: "A museum designed specifically for ages 0–5: their first art easel, first water table, soft climbing blocks, and a toddler-safe crawl tunnel. Everything is squishy, washable, and made for tiny explorers.",
+    map: "Habitot Children's Museum Berkeley CA",
+    tags: ["Ages 0–5", "Sensory play", "Indoor"]
+  },
+  {
+    sat: [2026,8,8], activity: "Sonoma TrainTown Railroad",
+    loc: "Sonoma", drive: "~1 hr 30 min from Fremont",
+    img: "images/08-traintown.png",
+    first: "First real train ride",
+    desc: "A 20-minute miniature train ride through tunnels and over little bridges — a thrilling first train for a 19-month-old — plus a petting zoo, carousel, and a kid-sized Ferris wheel. Built for the under-5 crowd.",
+    map: "TrainTown Sonoma CA",
+    tags: ["Train ride", "Petting zoo", "Carousel"]
+  },
+  {
+    sat: [2026,8,15], activity: "Henry Cowell Redwoods State Park",
+    loc: "Felton", drive: "~50 min from Fremont",
+    img: "images/09-redwoods.png",
+    first: "First walk among giant trees",
+    desc: "The flat, stroller-friendly Redwood Grove Loop lets toddlers crane their necks at towering ancient redwoods, touch the soft bark, and toddle over a wide, easy path. A calm, awe-filled first nature walk.",
+    map: "Henry Cowell Redwoods State Park Felton CA",
+    tags: ["Nature walk", "Shade", "Stroller loop"]
+  },
+  {
+    sat: [2026,8,22], activity: "Fairytale Town",
+    loc: "Sacramento", drive: "~2 hrs from Fremont",
+    img: "images/10-fairytaletown.png",
+    first: "First storybook playground",
+    desc: "A storybook play park with climb-in nursery-rhyme sets — a giant boot slide, a crooked house — plus gentle farm animals, all scaled for little legs. Shady, gated, and easy to navigate with a stroller.",
+    map: "Fairytale Town Sacramento CA",
+    tags: ["Play park", "Animals", "Gated & safe"]
+  },
+  {
+    sat: [2026,8,29], activity: "CuriOdyssey",
+    loc: "San Mateo", drive: "~35 min from Fremont",
+    img: "images/11-curiodyssey.png",
+    first: "First hands-on science & wildlife",
+    desc: "A bayside science playground where toddlers push, pour, and poke at interactive exhibits and meet rescued native animals up close. Small, manageable, and endlessly touchable — a great first museum of discovery.",
+    map: "CuriOdyssey San Mateo CA",
+    tags: ["Hands-on", "Live animals", "Outdoor + indoor"]
+  },
+  {
+    sat: [2026,9,5], activity: "Children's Creativity Museum",
+    loc: "San Francisco", drive: "~45 min from Fremont",
+    img: "images/12-creativitymuseum.png",
+    first: "First art & making experience",
+    desc: "Hands-on art and play studios in Yerba Buena Gardens with a dedicated toddler area — their first finger-paint, first building blocks — and the beloved 1906 carousel right outside. Labor Day weekend pick.",
+    map: "Children's Creativity Museum San Francisco CA",
+    tags: ["Indoor", "Art & play", "Carousel nearby"]
+  },
+  {
+    sat: [2026,9,12], activity: "Ardenwood Historic Farm",
+    loc: "Fremont", drive: "~10 min from Fremont",
+    img: "images/13-ardenwood.png",
+    first: "First day on a working farm",
+    desc: "A working historic farm right at home in Fremont — friendly cows and chickens, a horse-drawn rail car, and open fields to wander. Slow-paced and stroller-friendly for an easygoing toddler day.",
+    map: "Ardenwood Historic Farm Fremont CA",
+    tags: ["Farm animals", "Horse-drawn train", "Close to home"]
+  },
+  {
+    sat: [2026,9,19], activity: "Filoli Historic Garden",
+    loc: "Woodside", drive: "~40 min from Fremont",
+    img: "images/14-filoli.png",
+    first: "First garden stroll",
+    desc: "Sweeping, stroller-friendly formal gardens and open lawns to toddle across, with a gentle nature trail and a relaxed café. A calm, pretty way to close out the summer of firsts.",
+    map: "Filoli Woodside CA",
+    tags: ["Gardens", "Stroller-friendly", "Café"]
+  }
+];
+
+// ---- Helpers ----
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const WEEKDAYS = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+
+function pad(n){ return String(n).padStart(2,"0"); }
+function ymd(arr){ return `${arr[0]}${pad(arr[1])}${pad(arr[2])}`; } // YYYYMMDD
+function addDays(arr, days){
+  const d = new Date(arr[0], arr[1]-1, arr[2]);
+  d.setDate(d.getDate()+days);
+  return [d.getFullYear(), d.getMonth()+1, d.getDate()];
+}
+function prettyRange(sat){
+  const sun = addDays(sat, 1);
+  const sameMonth = sat[1] === sun[1];
+  const left = `${WEEKDAYS[6]} ${MONTHS[sat[1]-1]} ${sat[2]}`;
+  const right = sameMonth ? `${WEEKDAYS[0]} ${sun[2]}` : `${WEEKDAYS[0]} ${MONTHS[sun[1]-1]} ${sun[2]}`;
+  return `${left} – ${right}, ${sat[0]}`;
+}
+function gcalLink(ev){
+  const start = ymd(ev.sat);
+  const end = ymd(addDays(ev.sat, 2)); // all-day end is exclusive -> covers Sat & Sun
+  const params = new URLSearchParams({
+    action: "TEMPLATE",
+    text: `${ev.activity} (${ev.loc})`,
+    dates: `${start}/${end}`,
+    details: `${ev.desc}\n\nDrive: ${ev.drive}`,
+    location: ev.map
+  });
+  return `https://calendar.google.com/calendar/render?${params.toString()}`;
+}
+function mapLink(ev){
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ev.map)}`;
+}
+
+// ---- Render cards ----
+const grid = document.getElementById("grid");
+EVENTS.forEach((ev, i) => {
+  const band = BANDS[i % BANDS.length];
+  const card = document.createElement("article");
+  card.className = "card";
+  card.innerHTML = `
+    <div class="band" style="background:${band}">
+      <span class="when">${prettyRange(ev.sat)}</span>
+      <span class="num">#${i+1}</span>
+    </div>
+    <div class="thumb">
+      <img src="${ev.img}" alt="${ev.activity}" loading="lazy" />
+      ${ev.first ? `<span class="firstbadge">✨ ${ev.first}</span>` : ""}
+    </div>
+    <div class="body">
+      <h2 class="activity">${ev.activity}</h2>
+      <p class="loc">📍 ${ev.loc} · ${ev.drive}</p>
+      <p class="desc">${ev.desc}</p>
+      <div class="meta">${ev.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>
+    </div>
+    <div class="actions">
+      <a class="mini gcal" href="${gcalLink(ev)}" target="_blank" rel="noopener">📅 Add to Google Calendar</a>
+      <a class="mini map" href="${mapLink(ev)}" target="_blank" rel="noopener">🗺️ Directions</a>
+    </div>
+  `;
+  grid.appendChild(card);
+});
+
+// ---- Build .ics ----
+function icsEscape(s){
+  return String(s).replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\n/g,"\\n");
+}
+function foldLine(line){
+  // RFC 5545: lines should not exceed 75 octets; fold with CRLF + space
+  if (line.length <= 73) return line;
+  let out = "";
+  let idx = 0;
+  while (idx < line.length){
+    const chunk = line.slice(idx, idx + 73);
+    out += (idx === 0 ? "" : "\r\n ") + chunk;
+    idx += 73;
+  }
+  return out;
+}
+function buildIcs(){
+  const now = new Date();
+  const stamp = `${now.getUTCFullYear()}${pad(now.getUTCMonth()+1)}${pad(now.getUTCDate())}T${pad(now.getUTCHours())}${pad(now.getUTCMinutes())}${pad(now.getUTCSeconds())}Z`;
+  const lines = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//Summer 2026 Toddler Adventures//EN",
+    "CALSCALE:GREGORIAN",
+    "METHOD:PUBLISH",
+    "X-WR-CALNAME:Summer 2026 Toddler Weekend Adventures"
+  ];
+  EVENTS.forEach((ev, i) => {
+    const start = ymd(ev.sat);
+    const end = ymd(addDays(ev.sat, 2));
+    lines.push("BEGIN:VEVENT");
+    lines.push(`UID:summer2026-toddler-${i+1}@weekend-adventures`);
+    lines.push(`DTSTAMP:${stamp}`);
+    lines.push(`DTSTART;VALUE=DATE:${start}`);
+    lines.push(`DTEND;VALUE=DATE:${end}`);
+    lines.push(foldLine(`SUMMARY:${icsEscape(ev.activity + " — " + ev.loc)}`));
+    lines.push(foldLine(`DESCRIPTION:${icsEscape(ev.desc + "\nDrive: " + ev.drive)}`));
+    lines.push(foldLine(`LOCATION:${icsEscape(ev.map)}`));
+    lines.push("TRANSP:TRANSPARENT");
+    lines.push("END:VEVENT");
+  });
+  lines.push("END:VCALENDAR");
+  return lines.join("\r\n");
+}
+
+function showToast(msg){
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(window.__toastT);
+  window.__toastT = setTimeout(() => t.classList.remove("show"), 2600);
+}
+
+document.getElementById("downloadIcs").addEventListener("click", () => {
+  const blob = new Blob([buildIcs()], { type: "text/calendar;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "summer-2026-toddler-weekends.ics";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1500);
+  showToast("Calendar downloaded — open it to import all 14 weekends.");
+});
+
+document.getElementById("shareBtn").addEventListener("click", async () => {
+  const shareData = {
+    title: "Summer 2026 Toddler Weekend Adventures",
+    text: "14 toddler-friendly summer weekends around the Bay Area — with a downloadable calendar.",
+    url: location.href
+  };
+  try {
+    if (navigator.share) {
+      await navigator.share(shareData);
+    } else if (navigator.clipboard) {
+      await navigator.clipboard.writeText(location.href);
+      showToast("Page link copied to clipboard!");
+    } else {
+      showToast(location.href);
+    }
+  } catch (e) {
+    if (navigator.clipboard) {
+      try { await navigator.clipboard.writeText(location.href); showToast("Page link copied to clipboard!"); }
+      catch(_) { showToast("Copy this URL: " + location.href); }
+    }
+  }
+});
+</script>
+</body>
+</html>
