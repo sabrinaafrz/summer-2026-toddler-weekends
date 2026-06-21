@@ -161,6 +161,7 @@
     font-size: 13px; font-weight: 650; text-decoration: none;
     padding: 9px 12px; border-radius: 10px; display:inline-flex; align-items:center; gap:6px;
   }
+  .mini.web { background:#ffedd5; color:#c2410c; }
   .mini.gcal { background:#e0f2fe; color:#0369a1; }
   .mini.map { background:#dcfce7; color:#15803d; }
   .mini:hover { filter: brightness(.98); }
@@ -230,6 +231,7 @@ const EVENTS = [
     sat: [2026,6,20], activity: "Children's Fairyland",
     loc: "Oakland", drive: "~30 min from Fremont",
     img: "images/01-fairyland.png",
+    web: "https://fairyland.org",
     first: "First storybook adventure",
     desc: "A gentle, storybook-themed park made for little kids — their first puppet show, first tiny carousel ride, and walk-through fairy-tale sets they can toddle through. No big crowds or scary rides.",
     map: "Children's Fairyland, Oakland CA",
@@ -239,15 +241,17 @@ const EVENTS = [
     sat: [2026,6,27], activity: "Little Farm + Merry-Go-Round, Tilden Park",
     loc: "Berkeley", drive: "~40 min from Fremont",
     img: "images/02-littlefarm.png",
-    first: "First time feeding a farm animal",
-    desc: "Hand-feed lettuce and celery to cows, goats, and sheep at the free Little Farm — a classic toddler milestone — then a first spin on the vintage carousel and the Redwood Valley steam train nearby.",
+    web: "https://www.ebparks.org/parks/tilden-nature-area",
+    first: "First time meeting farm animals",
+    desc: "Get nose-to-nose with cows, goats, sheep, and chickens at the free Little Farm (bring your own — public feeding ended in 2026, so it's look-and-watch now), then a first spin on the vintage carousel and the Redwood Valley steam train nearby.",
     map: "Little Farm Tilden Regional Park Berkeley CA",
-    tags: ["Feed animals", "Free farm", "Carousel"]
+    tags: ["See animals", "Free farm", "Carousel"]
   },
   {
     sat: [2026,7,4], activity: "Berry Picking at Gizdich Ranch",
     loc: "Watsonville", drive: "~1 hr 15 min from Fremont",
     img: "images/03-berrypicking.png",
+    web: "https://www.gizdich-ranch.com",
     first: "First time picking fruit",
     desc: "Pick-your-own olallieberries from low, toddler-height bushes — the joy of plucking a berry and eating it on the spot. Open space to roam and a famous pie shop to finish. Relaxed holiday-weekend pace.",
     map: "Gizdich Ranch Watsonville CA",
@@ -257,6 +261,7 @@ const EVENTS = [
     sat: [2026,7,11], activity: "Gilroy Gardens Family Theme Park",
     loc: "Gilroy", drive: "~45 min from Fremont",
     img: "images/04-gilroygardens.png",
+    web: "https://www.gilroygardens.org",
     first: "First amusement-park rides",
     desc: "A garden theme park built for the littlest riders: their first tiny rides with low height limits, a first paddle boat, splash areas, and acres of grass. Gentle, green, and genuinely toddler-scaled.",
     map: "Gilroy Gardens Family Theme Park Gilroy CA",
@@ -266,24 +271,27 @@ const EVENTS = [
     sat: [2026,7,18], activity: "Lindsay Wildlife Experience",
     loc: "Walnut Creek", drive: "~35 min from Fremont",
     img: "images/05-lindsaywildlife.png",
+    web: "https://lindsaywildlife.org",
     first: "First close-up with wild animals",
     desc: "A small, easy wildlife museum where toddlers meet live rescued animals — hawks, owls, a rabbit — just feet away, plus a hands-on nature nook. Indoor and cool for a warm inland weekend.",
     map: "Lindsay Wildlife Experience Walnut Creek CA",
     tags: ["Indoor", "Live animals", "Hands-on"]
   },
   {
-    sat: [2026,7,25], activity: "Emerald Glen Park Splash Pad",
+    sat: [2026,7,25], activity: "Splash Zone at The Wave (Emerald Glen Park)",
     loc: "Dublin", drive: "~25 min from Fremont",
     img: "images/06-splashpad.png",
+    web: "https://www.thedublinwave.com",
     first: "First splash-pad water play",
-    desc: "A big, flat, zero-depth splash pad with gentle fountains and jets — the perfect first water-play experience for unsteady little feet. Bring a towel, a swim diaper, and let them squeal. Shady playground alongside.",
-    map: "Emerald Glen Park Dublin CA",
-    tags: ["Water play", "Free", "Hot-day pick"]
+    desc: "The Wave's Splash Zone is a zero-depth water-play area made for little ones — a tipping bucket, a shallow pool, gentle sprays and squirters, and two kiddy slides. The perfect first water-play day. Open summer season; buy waterpark admission.",
+    map: "The Wave Waterpark Dublin CA",
+    tags: ["Water play", "Summer season", "Buy tickets"]
   },
   {
     sat: [2026,8,1], activity: "Habitot Children's Museum",
     loc: "Berkeley", drive: "~45 min from Fremont",
     img: "images/07-habitot.png",
+    web: "https://www.habitot.org",
     first: "First hands-on play museum",
     desc: "A museum designed specifically for ages 0–5: their first art easel, first water table, soft climbing blocks, and a toddler-safe crawl tunnel. Everything is squishy, washable, and made for tiny explorers.",
     map: "Habitot Children's Museum Berkeley CA",
@@ -293,6 +301,7 @@ const EVENTS = [
     sat: [2026,8,8], activity: "Sonoma TrainTown Railroad",
     loc: "Sonoma", drive: "~1 hr 30 min from Fremont",
     img: "images/08-traintown.png",
+    web: "https://traintown.com",
     first: "First real train ride",
     desc: "A 20-minute miniature train ride through tunnels and over little bridges — a thrilling first train for a 19-month-old — plus a petting zoo, carousel, and a kid-sized Ferris wheel. Built for the under-5 crowd.",
     map: "TrainTown Sonoma CA",
@@ -302,6 +311,7 @@ const EVENTS = [
     sat: [2026,8,15], activity: "Henry Cowell Redwoods State Park",
     loc: "Felton", drive: "~50 min from Fremont",
     img: "images/09-redwoods.png",
+    web: "https://www.parks.ca.gov/henrycowell/",
     first: "First walk among giant trees",
     desc: "The flat, stroller-friendly Redwood Grove Loop lets toddlers crane their necks at towering ancient redwoods, touch the soft bark, and toddle over a wide, easy path. A calm, awe-filled first nature walk.",
     map: "Henry Cowell Redwoods State Park Felton CA",
@@ -311,6 +321,7 @@ const EVENTS = [
     sat: [2026,8,22], activity: "Fairytale Town",
     loc: "Sacramento", drive: "~2 hrs from Fremont",
     img: "images/10-fairytaletown.png",
+    web: "https://fairytaletown.org",
     first: "First storybook playground",
     desc: "A storybook play park with climb-in nursery-rhyme sets — a giant boot slide, a crooked house — plus gentle farm animals, all scaled for little legs. Shady, gated, and easy to navigate with a stroller.",
     map: "Fairytale Town Sacramento CA",
@@ -320,6 +331,7 @@ const EVENTS = [
     sat: [2026,8,29], activity: "CuriOdyssey",
     loc: "San Mateo", drive: "~35 min from Fremont",
     img: "images/11-curiodyssey.png",
+    web: "https://curiodyssey.org",
     first: "First hands-on science & wildlife",
     desc: "A bayside science playground where toddlers push, pour, and poke at interactive exhibits and meet rescued native animals up close. Small, manageable, and endlessly touchable — a great first museum of discovery.",
     map: "CuriOdyssey San Mateo CA",
@@ -329,6 +341,7 @@ const EVENTS = [
     sat: [2026,9,5], activity: "Children's Creativity Museum",
     loc: "San Francisco", drive: "~45 min from Fremont",
     img: "images/12-creativitymuseum.png",
+    web: "https://creativity.org",
     first: "First art & making experience",
     desc: "Hands-on art and play studios in Yerba Buena Gardens with a dedicated toddler area — their first finger-paint, first building blocks — and the beloved 1906 carousel right outside. Labor Day weekend pick.",
     map: "Children's Creativity Museum San Francisco CA",
@@ -338,6 +351,7 @@ const EVENTS = [
     sat: [2026,9,12], activity: "Ardenwood Historic Farm",
     loc: "Fremont", drive: "~10 min from Fremont",
     img: "images/13-ardenwood.png",
+    web: "https://www.ebparks.org/parks/ardenwood",
     first: "First day on a working farm",
     desc: "A working historic farm right at home in Fremont — friendly cows and chickens, a horse-drawn rail car, and open fields to wander. Slow-paced and stroller-friendly for an easygoing toddler day.",
     map: "Ardenwood Historic Farm Fremont CA",
@@ -347,6 +361,7 @@ const EVENTS = [
     sat: [2026,9,19], activity: "Filoli Historic Garden",
     loc: "Woodside", drive: "~40 min from Fremont",
     img: "images/14-filoli.png",
+    web: "https://filoli.org",
     first: "First garden stroll",
     desc: "Sweeping, stroller-friendly formal gardens and open lawns to toddle across, with a gentle nature trail and a relaxed café. A calm, pretty way to close out the summer of firsts.",
     map: "Filoli Woodside CA",
@@ -379,7 +394,7 @@ function gcalLink(ev){
     action: "TEMPLATE",
     text: `${ev.activity} (${ev.loc})`,
     dates: `${start}/${end}`,
-    details: `${ev.desc}\n\nDrive: ${ev.drive}`,
+    details: `${ev.desc}\n\nDrive: ${ev.drive}${ev.web ? `\nWebsite: ${ev.web}` : ""}`,
     location: ev.map
   });
   return `https://calendar.google.com/calendar/render?${params.toString()}`;
@@ -410,6 +425,7 @@ EVENTS.forEach((ev, i) => {
       <div class="meta">${ev.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>
     </div>
     <div class="actions">
+      ${ev.web ? `<a class="mini web" href="${ev.web}" target="_blank" rel="noopener">🌐 Website</a>` : ""}
       <a class="mini gcal" href="${gcalLink(ev)}" target="_blank" rel="noopener">📅 Add to Google Calendar</a>
       <a class="mini map" href="${mapLink(ev)}" target="_blank" rel="noopener">🗺️ Directions</a>
     </div>
