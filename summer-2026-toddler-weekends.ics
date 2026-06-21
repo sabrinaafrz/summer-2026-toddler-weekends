@@ -22,69 +22,71 @@ UID:summer2026-toddler-2@weekend-adventures
 DTSTAMP:20260621T120000Z
 DTSTART;VALUE=DATE:20260718
 DTEND;VALUE=DATE:20260720
-SUMMARY:Lindsay Wildlife Experience (Walnut Creek)
-DESCRIPTION:A small\, easy wildlife museum where toddlers meet live rescu
- ed animals - hawks\, owls\, a rabbit - just feet away\, plus a hands-on 
- nature nook. Indoor and cool for a warm inland weekend.\n\nDrive: ~35 mi
- n from Fremont\nWebsite: https://lindsaywildlife.org
-LOCATION:Lindsay Wildlife Experience Walnut Creek CA
-URL:https://lindsaywildlife.org
+SUMMARY:Ferry Ride Across the Bay (SF Ferry Building to Sausalito)
+DESCRIPTION:His first time out on the open water - board the Golden Gate 
+ Ferry at the SF Ferry Building and glide 30 minutes across the Bay to Sa
+ usalito\, with the Golden Gate Bridge\, Alcatraz\, and the skyline drift
+ ing by. Kids under 5 ride free.\n\nDrive: ~45 min to the Ferry Building\
+ nWebsite: https://www.goldengate.org/ferry/
+LOCATION:San Francisco Ferry Building\, San Francisco CA
+URL:https://www.goldengate.org/ferry/
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-3@weekend-adventures
 DTSTAMP:20260621T120000Z
 DTSTART;VALUE=DATE:20260725
 DTEND;VALUE=DATE:20260727
-SUMMARY:Farm Cottage Stay - Mar Vista\, Gualala (Gualala (Mendocino Coast
- ))
-DESCRIPTION:Rent a restored 1930s cottage on a 9-acre organic farm on the
-  'secret coast.' Collect warm eggs at the daily Chicken Chat\, feed the 
- goats at Goat Gab\, pick veggies from the garden\, and toddle down to a 
- private beach. Pure\, screen-free magic.\n\nDrive: ~3 hrs from Fremont\n
- Website: https://marvistafarmandcottages.com/
-LOCATION:Mar Vista Farm and Cottages\, 35101 CA-1\, Gualala CA
-URL:https://marvistafarmandcottages.com/
+SUMMARY:Parent-and-Me Swim Class (La Petite Baleen\, Redwood City)
+DESCRIPTION:A first splash in the warm-water pool at La Petite Baleen\, a
+  beloved Bay Area swim school since 1979. You are in the water with him 
+ the whole time\, learning songs\, gentle floats\, and bubble-blowing in 
+ a cozy 90-degree pool. Call ahead to book a trial class.\n\nDrive: ~35 m
+ in from Fremont\nWebsite: https://www.swimlpb.com/
+LOCATION:La Petite Baleen Swim School\, 60 Fifth Ave\, Redwood City CA
+URL:https://www.swimlpb.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-4@weekend-adventures
 DTSTAMP:20260621T120000Z
 DTSTART;VALUE=DATE:20260801
 DTEND;VALUE=DATE:20260803
-SUMMARY:Habitot Children's Museum (Berkeley)
-DESCRIPTION:A museum designed specifically for ages 0-5: their first art 
- easel\, first water table\, soft climbing blocks\, and a toddler-safe cr
- awl tunnel. Everything is squishy\, washable\, and made for tiny explore
- rs.\n\nDrive: ~45 min from Fremont\nWebsite: https://www.habitot.org
-LOCATION:Habitot Children's Museum Berkeley CA
-URL:https://www.habitot.org
+SUMMARY:Music & Movement Class (Music Together (local class))
+DESCRIPTION:His first morning of shakers\, drums\, scarves\, and silly so
+ ngs in a circle of families. Music Together's mixed-age classes are pure
+  joy for a 19-month-old. Use the finder to pick the closest Tri-City cla
+ ss and drop into a free demo.\n\nDrive: ~15 min from Fremont\nWebsite: h
+ ttps://www.musictogether.com/find-a-class
+LOCATION:Music Together class Fremont CA
+URL:https://www.musictogether.com/find-a-class
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-5@weekend-adventures
 DTSTAMP:20260621T120000Z
 DTSTART;VALUE=DATE:20260808
 DTEND;VALUE=DATE:20260810
-SUMMARY:Aquarium of the Bay (San Francisco (Pier 39))
-DESCRIPTION:Walk through 300 feet of clear glass tunnels with sharks\, ba
- t rays\, and schools of fish gliding right overhead. Touch pools\, playf
- ul river otters\, and barking sea lions right outside on Pier 39. Stroll
- er-friendly throughout.\n\nDrive: ~50 min from Fremont\nWebsite: https:/
- /www.aquariumofthebay.org
-LOCATION:Aquarium of the Bay\, PIER 39\, San Francisco CA
-URL:https://www.aquariumofthebay.org
+SUMMARY:Niles Canyon Railway Train Ride (Sunol Depot)
+DESCRIPTION:A genuine vintage train ride right in your backyard - climb a
+ board a historic coach at the Sunol Depot and rumble through scenic Nile
+ s Canyon alongside the creek and oak hills. Aug 8 is a scheduled diesel 
+ run\; departures 10:30am & 1pm. Kids 2 & under free - buy tickets online
+  ahead.\n\nDrive: ~20 min from Fremont\nWebsite: https://www.ncry.org/ri
+ de/2026-train-rides/
+LOCATION:Niles Canyon Railway\, 6 Kilkare Rd\, Sunol CA
+URL:https://www.ncry.org/ride/2026-train-rides/
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-6@weekend-adventures
 DTSTAMP:20260621T120000Z
 DTSTART;VALUE=DATE:20260815
 DTEND;VALUE=DATE:20260817
-SUMMARY:Randall Museum (San Francisco)
-DESCRIPTION:A free\, low-key SF gem with 100+ rescued live animals\, a de
- dicated Toddler Treehouse playroom\, and a beloved model railroad that v
- olunteers run on Saturdays. Small\, calm\, made for little explorers - a
- nd it costs nothing.\n\nDrive: ~50 min from Fremont\nWebsite: https://ra
- ndallmuseum.org
-LOCATION:Randall Museum\, 199 Museum Way\, San Francisco CA
-URL:https://randallmuseum.org
+SUMMARY:The Little Gym Parent-Child Class (The Little Gym of Milpitas)
+DESCRIPTION:A whole gym made for wobbly little movers - soft beams to tod
+ dle across\, mats to roll on\, bars to hang from\, and a parachute final
+ e. The Beasts parent-child class (19-35 months) is built for busy boys h
+ is age. Try a free intro class.\n\nDrive: ~15 min from Fremont\nWebsite:
+  https://www.thelittlegym.com/california-milpitas/
+LOCATION:The Little Gym of Milpitas CA
+URL:https://www.thelittlegym.com/california-milpitas/
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-7@weekend-adventures
