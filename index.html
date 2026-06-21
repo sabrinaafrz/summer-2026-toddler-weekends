@@ -58,6 +58,59 @@
     box-shadow: var(--shadow);
   }
 
+  /* ---- Father's Day cover ---- */
+  .cover {
+    display: grid;
+    grid-template-columns: minmax(0, 340px) 1fr;
+    gap: 26px;
+    align-items: center;
+    background: linear-gradient(135deg, #ffffff, #fff7ed 60%, #ffe9ef);
+    border: 1px solid var(--ring);
+    border-radius: 28px;
+    padding: 22px;
+    box-shadow: var(--shadow);
+    margin-bottom: 10px;
+  }
+  .cover-photo-wrap {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+    background: #fde7cf;
+    box-shadow: 0 14px 34px rgba(124,45,18,.20);
+  }
+  .cover-photo { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .cover-photo-fallback {
+    position: absolute; inset: 0;
+    display: none;
+    align-items: center; justify-content: center; text-align: center;
+    color: #b07a4e; font-size: 14px; padding: 18px;
+    background: repeating-linear-gradient(45deg, #fde7cf, #fde7cf 12px, #fcdcbd 12px, #fcdcbd 24px);
+  }
+  .cover-photo-fallback code { background: rgba(255,255,255,.7); padding: 1px 6px; border-radius: 6px; font-size: 12px; }
+  .cover-body { text-align: left; }
+  .fday-badge {
+    display: inline-flex; align-items: center; gap: 7px;
+    background: #ffe4e6; color: #be123c;
+    font-weight: 700; font-size: 13px; letter-spacing: .01em;
+    padding: 7px 14px; border-radius: 999px;
+  }
+  .cover-body h2 {
+    font-size: clamp(24px, 3.6vw, 36px);
+    margin: 14px 0 10px; letter-spacing: -0.02em; line-height: 1.1;
+  }
+  .fday-msg {
+    color: var(--ink); font-size: clamp(15px, 1.9vw, 17px);
+    margin: 0 0 20px; max-width: 54ch;
+  }
+  .fday-sign { color: var(--muted); font-style: italic; margin: -10px 0 20px; }
+  @media (max-width: 720px) {
+    .cover { grid-template-columns: 1fr; gap: 18px; padding: 18px; text-align: center; }
+    .cover-photo-wrap { max-width: 280px; margin: 0 auto; }
+    .cover-body { text-align: center; }
+    .fday-msg { margin-left: auto; margin-right: auto; }
+  }
+
   .toolbar {
     position: sticky;
     top: 0;
@@ -180,6 +233,23 @@
 </head>
 <body>
 <div class="wrap">
+  <section class="cover">
+    <div class="cover-photo-wrap">
+      <img class="cover-photo" src="images/family-cover.jpg" alt="Our family"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="cover-photo-fallback">
+        <div>📸<br/><br/>Add your photo here:<br/>save it as<br/><code>images/family-cover.jpg</code></div>
+      </div>
+    </div>
+    <div class="cover-body">
+      <span class="fday-badge">💙 Happy Father's Day</span>
+      <h2>To the world's greatest Baba</h2>
+      <p class="fday-msg">We see all the love and effort you pour into making our family smile. Here's to a summer full of firsts, fun, and memories — every weekend, together.</p>
+      <p class="fday-sign">— with all our love, your little guy &amp; Mama 💙</p>
+      <button class="btn primary" id="downloadIcsTop">⬇️ Download our summer calendar</button>
+    </div>
+  </section>
+
   <header class="hero">
     <div class="sun">☀️🧸</div>
     <h1>Summer 2026 Weekend Adventures</h1>
@@ -436,7 +506,7 @@ function showToast(msg){
   window.__toastT = setTimeout(() => t.classList.remove("show"), 2600);
 }
 
-document.getElementById("downloadIcs").addEventListener("click", () => {
+function downloadIcsFile(){
   const blob = new Blob([buildIcs()], { type: "text/calendar;charset=utf-8" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
@@ -447,12 +517,14 @@ document.getElementById("downloadIcs").addEventListener("click", () => {
   document.body.removeChild(a);
   setTimeout(() => URL.revokeObjectURL(url), 1500);
   showToast("Calendar downloaded — open it to import all 9 weekends.");
-});
+}
+document.getElementById("downloadIcs").addEventListener("click", downloadIcsFile);
+document.getElementById("downloadIcsTop").addEventListener("click", downloadIcsFile);
 
 document.getElementById("shareBtn").addEventListener("click", async () => {
   const shareData = {
     title: "Summer 2026 Toddler Weekend Adventures",
-    text: "14 toddler-friendly summer weekends around the Bay Area — with a downloadable calendar.",
+    text: "9 toddler-friendly summer weekends around the Bay Area — with a downloadable calendar.",
     url: location.href
   };
   try {
