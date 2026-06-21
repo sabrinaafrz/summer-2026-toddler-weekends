@@ -6,208 +6,127 @@ METHOD:PUBLISH
 X-WR-CALNAME:Summer 2026 Toddler Weekend Adventures
 BEGIN:VEVENT
 UID:summer2026-toddler-1@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260620
-DTEND;VALUE=DATE:20260622
-SUMMARY:Children's Fairyland — Oakland
-DESCRIPTION:A gentle\, storybook-themed park made for little kids — their
-  first puppet show\, first tiny carousel ride\, and walk-through fairy-ta
- le sets they can toddle through. No big crowds or scary rides.\nDrive: ~3
- 0 min from Fremont\nWebsite: https://fairyland.org
-LOCATION:Children's Fairyland\, Oakland CA
-URL:https://fairyland.org
-TRANSP:TRANSPARENT
+DTSTAMP:20260621T120000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260713
+SUMMARY:Hiller Aviation Museum (San Carlos)
+DESCRIPTION:A hangar full of real planes and helicopters where your littl
+ e guy can climb into a Boeing 747 cockpit\, watch planes overhead\, and 
+ build with giant foam blocks at the Imagination Playground. Indoor and e
+ asy.\n\nDrive: ~35 min from Fremont\nWebsite: https://www.hiller.org
+LOCATION:Hiller Aviation Museum\, 601 Skyway Rd\, San Carlos CA
+URL:https://www.hiller.org
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-2@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260627
-DTEND;VALUE=DATE:20260629
-SUMMARY:Little Farm + Merry-Go-Round\, Tilden Park — Berkeley
-DESCRIPTION:Get nose-to-nose with cows\, goats\, sheep\, and chickens at 
- the free Little Farm (public feeding ended in 2026\, so it's look-and-wat
- ch now)\, then a first spin on the vintage carousel and the Redwood Valle
- y steam train nearby.\nDrive: ~40 min from Fremont\nWebsite: https://www.
- ebparks.org/parks/tilden-nature-area
-LOCATION:Little Farm Tilden Regional Park Berkeley CA
-URL:https://www.ebparks.org/parks/tilden-nature-area
-TRANSP:TRANSPARENT
+DTSTAMP:20260621T120000Z
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20260720
+SUMMARY:Lindsay Wildlife Experience (Walnut Creek)
+DESCRIPTION:A small\, easy wildlife museum where toddlers meet live rescu
+ ed animals - hawks\, owls\, a rabbit - just feet away\, plus a hands-on 
+ nature nook. Indoor and cool for a warm inland weekend.\n\nDrive: ~35 mi
+ n from Fremont\nWebsite: https://lindsaywildlife.org
+LOCATION:Lindsay Wildlife Experience Walnut Creek CA
+URL:https://lindsaywildlife.org
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-3@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260704
-DTEND;VALUE=DATE:20260706
-SUMMARY:Farm Cottage Stay · Mar Vista\, Gualala — Gualala (Mendocino Coas
- t)
-DESCRIPTION:Rent a restored 1930s cottage (fireplace\, full kitchen\, pri
- vate bath) on a 9-acre organic farm on the 'secret coast.' Your little gu
- y collects warm eggs at the daily Chicken Chat\, feeds the goats at Goat 
- Gab\, picks veggies straight from the garden\, and toddles down to a priv
- ate beach. Pure\, screen-free magic.\nDrive: ~3 hrs from Fremont\nWebsite
- : https://marvistafarmandcottages.com/
+DTSTAMP:20260621T120000Z
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260727
+SUMMARY:Farm Cottage Stay - Mar Vista\, Gualala (Gualala (Mendocino Coast
+ ))
+DESCRIPTION:Rent a restored 1930s cottage on a 9-acre organic farm on the
+  'secret coast.' Collect warm eggs at the daily Chicken Chat\, feed the 
+ goats at Goat Gab\, pick veggies from the garden\, and toddle down to a 
+ private beach. Pure\, screen-free magic.\n\nDrive: ~3 hrs from Fremont\n
+ Website: https://marvistafarmandcottages.com/
 LOCATION:Mar Vista Farm and Cottages\, 35101 CA-1\, Gualala CA
 URL:https://marvistafarmandcottages.com/
-TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-4@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260711
-DTEND;VALUE=DATE:20260713
-SUMMARY:Gilroy Gardens Family Theme Park — Gilroy
-DESCRIPTION:A garden theme park built for the littlest riders: their firs
- t tiny rides with low height limits\, a first paddle boat\, splash areas\
- , and acres of grass. Gentle\, green\, and genuinely toddler-scaled.\nDri
- ve: ~45 min from Fremont\nWebsite: https://www.gilroygardens.org
-LOCATION:Gilroy Gardens Family Theme Park Gilroy CA
-URL:https://www.gilroygardens.org
-TRANSP:TRANSPARENT
+DTSTAMP:20260621T120000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260803
+SUMMARY:Habitot Children's Museum (Berkeley)
+DESCRIPTION:A museum designed specifically for ages 0-5: their first art 
+ easel\, first water table\, soft climbing blocks\, and a toddler-safe cr
+ awl tunnel. Everything is squishy\, washable\, and made for tiny explore
+ rs.\n\nDrive: ~45 min from Fremont\nWebsite: https://www.habitot.org
+LOCATION:Habitot Children's Museum Berkeley CA
+URL:https://www.habitot.org
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-5@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260718
-DTEND;VALUE=DATE:20260720
-SUMMARY:Lindsay Wildlife Experience — Walnut Creek
-DESCRIPTION:A small\, easy wildlife museum where toddlers meet live rescu
- ed animals — hawks\, owls\, a rabbit — just feet away\, plus a hands-on n
- ature nook. Indoor and cool for a warm inland weekend.\nDrive: ~35 min fr
- om Fremont\nWebsite: https://lindsaywildlife.org
-LOCATION:Lindsay Wildlife Experience Walnut Creek CA
-URL:https://lindsaywildlife.org
-TRANSP:TRANSPARENT
+DTSTAMP:20260621T120000Z
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260810
+SUMMARY:Aquarium of the Bay (San Francisco (Pier 39))
+DESCRIPTION:Walk through 300 feet of clear glass tunnels with sharks\, ba
+ t rays\, and schools of fish gliding right overhead. Touch pools\, playf
+ ul river otters\, and barking sea lions right outside on Pier 39. Stroll
+ er-friendly throughout.\n\nDrive: ~50 min from Fremont\nWebsite: https:/
+ /www.aquariumofthebay.org
+LOCATION:Aquarium of the Bay\, PIER 39\, San Francisco CA
+URL:https://www.aquariumofthebay.org
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-6@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260725
-DTEND;VALUE=DATE:20260727
-SUMMARY:Splash Zone at The Wave (Emerald Glen Park) — Dublin
-DESCRIPTION:The Wave's Splash Zone is a zero-depth water-play area made f
- or little ones — a tipping bucket\, a shallow pool\, gentle sprays and sq
- uirters\, and two kiddy slides. The perfect first water-play day. Open su
- mmer season\; buy waterpark admission.\nDrive: ~25 min from Fremont\nWebs
- ite: https://www.thedublinwave.com
-LOCATION:The Wave Waterpark Dublin CA
-URL:https://www.thedublinwave.com
-TRANSP:TRANSPARENT
+DTSTAMP:20260621T120000Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260817
+SUMMARY:Randall Museum (San Francisco)
+DESCRIPTION:A free\, low-key SF gem with 100+ rescued live animals\, a de
+ dicated Toddler Treehouse playroom\, and a beloved model railroad that v
+ olunteers run on Saturdays. Small\, calm\, made for little explorers - a
+ nd it costs nothing.\n\nDrive: ~50 min from Fremont\nWebsite: https://ra
+ ndallmuseum.org
+LOCATION:Randall Museum\, 199 Museum Way\, San Francisco CA
+URL:https://randallmuseum.org
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-7@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260801
-DTEND;VALUE=DATE:20260803
-SUMMARY:Habitot Children's Museum — Berkeley
-DESCRIPTION:A museum designed specifically for ages 0–5: their first art 
- easel\, first water table\, soft climbing blocks\, and a toddler-safe cra
- wl tunnel. Everything is squishy\, washable\, and made for tiny explorers
- .\nDrive: ~45 min from Fremont\nWebsite: https://www.habitot.org
-LOCATION:Habitot Children's Museum Berkeley CA
-URL:https://www.habitot.org
-TRANSP:TRANSPARENT
+DTSTAMP:20260621T120000Z
+DTSTART;VALUE=DATE:20260822
+DTEND;VALUE=DATE:20260824
+SUMMARY:Coastal Cabin Stay - Costanoa\, Pescadero (Pescadero (San Mateo C
+ oast))
+DESCRIPTION:A laid-back eco-resort between the coastal hills and the sea.
+  Rent a cozy cabin or family cottage with its own fire pit\, roast a fre
+ e marshmallow at the nightly Sunset S'mores\, wander easy nature trails 
+ spotting deer and bunnies\, and stroll the dune boardwalk to a wild\, qu
+ iet beach.\n\nDrive: ~1 hr 20 min from Fremont\nWebsite: https://www.cos
+ tanoa.com/
+LOCATION:Costanoa Lodge\, 2001 Rossi Rd\, Pescadero CA
+URL:https://www.costanoa.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-8@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260808
-DTEND;VALUE=DATE:20260810
-SUMMARY:Sonoma TrainTown Railroad — Sonoma
-DESCRIPTION:A 20-minute miniature train ride through tunnels and over lit
- tle bridges — a thrilling first train for a 19-month-old — plus a petting
-  zoo\, carousel\, and a kid-sized Ferris wheel. Built for the under-5 cro
- wd.\nDrive: ~1 hr 30 min from Fremont\nWebsite: https://traintown.com
-LOCATION:TrainTown Sonoma CA
-URL:https://traintown.com
-TRANSP:TRANSPARENT
+DTSTAMP:20260621T120000Z
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260831
+SUMMARY:CuriOdyssey (San Mateo)
+DESCRIPTION:A bayside science playground where toddlers push\, pour\, and
+  poke at interactive exhibits and meet rescued native animals up close. 
+ Small\, manageable\, and endlessly touchable - a great first museum of d
+ iscovery.\n\nDrive: ~35 min from Fremont\nWebsite: https://curiodyssey.o
+ rg
+LOCATION:CuriOdyssey San Mateo CA
+URL:https://curiodyssey.org
 END:VEVENT
 BEGIN:VEVENT
 UID:summer2026-toddler-9@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260815
-DTEND;VALUE=DATE:20260817
-SUMMARY:Henry Cowell Redwoods State Park — Felton
-DESCRIPTION:The flat\, stroller-friendly Redwood Grove Loop lets toddlers
-  crane their necks at towering ancient redwoods\, touch the soft bark\, a
- nd toddle over a wide\, easy path. A calm\, awe-filled first nature walk.
- \nDrive: ~50 min from Fremont\nWebsite: https://www.parks.ca.gov/henrycow
- ell/
-LOCATION:Henry Cowell Redwoods State Park Felton CA
-URL:https://www.parks.ca.gov/henrycowell/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:summer2026-toddler-10@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260822
-DTEND;VALUE=DATE:20260824
-SUMMARY:Coastal Cabin Stay · Costanoa\, Pescadero — Pescadero (San Mateo 
- Coast)
-DESCRIPTION:A laid-back eco-resort tucked between the coastal hills and t
- he sea. Rent a cozy cabin or a family cottage with its own fire pit\, roa
- st a free marshmallow at the nightly Sunset S'mores\, wander easy nature 
- trails spotting deer and bunnies\, and stroll the dune boardwalk to a wil
- d\, quiet beach. Summer is 'kid time' here\, with little-adventurer activ
- ities.\nDrive: ~1 hr 20 min from Fremont\nWebsite: https://www.costanoa.c
- om/
-LOCATION:Costanoa Lodge\, 2001 Rossi Rd\, Pescadero CA
-URL:https://www.costanoa.com/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:summer2026-toddler-11@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260829
-DTEND;VALUE=DATE:20260831
-SUMMARY:CuriOdyssey — San Mateo
-DESCRIPTION:A bayside science playground where toddlers push\, pour\, and
-  poke at interactive exhibits and meet rescued native animals up close. S
- mall\, manageable\, and endlessly touchable — a great first museum of dis
- covery.\nDrive: ~35 min from Fremont\nWebsite: https://curiodyssey.org
-LOCATION:CuriOdyssey San Mateo CA
-URL:https://curiodyssey.org
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:summer2026-toddler-12@weekend-adventures
-DTSTAMP:20260621T190000Z
+DTSTAMP:20260621T120000Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260907
-SUMMARY:Children's Creativity Museum — San Francisco
+SUMMARY:Children's Creativity Museum (San Francisco)
 DESCRIPTION:Hands-on art and play studios in Yerba Buena Gardens with a d
- edicated toddler area — their first finger-paint\, first building blocks 
- — and the beloved 1906 carousel right outside. Labor Day weekend pick.\nD
- rive: ~45 min from Fremont\nWebsite: https://creativity.org
+ edicated toddler area - their first finger-paint\, first building blocks
+  - and the beloved 1906 carousel right outside. Labor Day weekend pick.\
+ n\nDrive: ~45 min from Fremont\nWebsite: https://creativity.org
 LOCATION:Children's Creativity Museum San Francisco CA
 URL:https://creativity.org
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:summer2026-toddler-13@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260912
-DTEND;VALUE=DATE:20260914
-SUMMARY:Ardenwood Historic Farm — Fremont
-DESCRIPTION:A working historic farm right at home in Fremont — friendly c
- ows and chickens\, a horse-drawn rail car\, and open fields to wander. Sl
- ow-paced and stroller-friendly for an easygoing toddler day.\nDrive: ~10 
- min from Fremont\nWebsite: https://www.ebparks.org/parks/ardenwood
-LOCATION:Ardenwood Historic Farm Fremont CA
-URL:https://www.ebparks.org/parks/ardenwood
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:summer2026-toddler-14@weekend-adventures
-DTSTAMP:20260621T190000Z
-DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20260921
-SUMMARY:Filoli Historic Garden — Woodside
-DESCRIPTION:Sweeping\, stroller-friendly formal gardens and open lawns to
-  toddle across\, with a gentle nature trail and a relaxed café. A calm\, 
- pretty way to close out the summer of firsts.\nDrive: ~40 min from Fremon
- t\nWebsite: https://filoli.org
-LOCATION:Filoli Woodside CA
-URL:https://filoli.org
-TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR
